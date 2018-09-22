@@ -30,7 +30,7 @@ int equilateralTriangle()
 		cin >> a;
 		area = sqrt(3) / 4 * (a * a);
 		
-		cout << "The area of the equilateral triangle is" << area << endl;
+		cout << "The area of the equilateral triangle is " << area << endl;
 	}
 	system("pause");
 	return 0;
