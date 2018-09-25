@@ -27,32 +27,32 @@ int main()
 
 	cout << "Welcome to Delgados Tacos/n" << endl;
 	cout << "Please enter your order here/n: " << endl;
-	cout << "1-tacos = $2.00 / 2-burritos = $2.00 / 3-nachos = $2.00 / 4-churro = $1.00 / 5-churro = $2.00";
+	cout << "1-tacos = $2.00 / 2-burritos = $2.00 / 3-nachos = $2.00 / 4-tamale = $2.00 / 5-churro = $2.00";
 	cin >> choice;
 	
 	if (choice == 1)
 	{
-		totalBill = tacoOrder;
-		cout << "The total bill is " << tacoOrder << endl;
+		totalBill = tacoOrder + 0.07;
+		cout << "The total bill is " << totalBill << endl;
 	}
 	else if (choice == 2)
 	{
-		totalBill = burritoOrder;
-		cout << "The total bill is " << burritoOrder << endl;
+		totalBill = burritoOrder + 0.07;
+		cout << "The total bill is " << totalBill << endl;
 	}
 	else if (choice == 3)
 	{
-		totalBill = nachoOrder;
-		cout << "The total bill is " << nachoOrder << endl;
+		totalBill = nachoOrder + 0.07;
+		cout << "The total bill is " << totalBill << endl;
 	}
 	else if (choice == 4)
 	{
-		totalBill = tamalesOrder;
-		cout << "The total bill is " << tamalesOrder << endl;
+		totalBill = tamalesOrder + 0.07;
+		cout << "The total bill is " << totalBill << endl;
 	}
 	else if (choice == 5)
 	{
-		totalBill = churroOrder;
+		totalBill = churroOrder + 0.07;
 		cout << "The total bill is " << totalBill << endl;
 	}
 
