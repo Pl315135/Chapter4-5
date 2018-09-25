@@ -7,34 +7,33 @@ using namespace std;
 
 int main()
 {
-	int numberGuess;
+	int numberChoice;
 	int secret;
 	string result;
 	int count = 0;
 	srand(time(NULL));
-	secret = rand() % 100 + 1;
+	secret = rand() % 10 + 1;
 
 	cout << " Welcome to the number generator.\n ";
-	
-	
-	
 	do {
-		cout << " This is where you get to pick a number from 1 to 100 and type it. ";
-		cin >> numberGuess;
-		cout << " Pick a number from 1 to 100: ";
-		if (numberGuess < secret)
+		cout << " This is where you get to pick a number from 1 to 10 and type it. ";
+		cin >> numberChoice;
+		cout << " Pick a number from 1 to 10: ";
+		if (numberChoice < secret)
 		{
-			result = "The number is too low";
+			result = "The number is low";
 		}
-		else if (numberGuess > secret)
+		else if (numberChoice > secret)
 		{
-			result = "the number is too high";
+			result = "the number is high";
 		}
 		cout << result << endl;
 		count++;
-	} while (numberGuess != secret);
-	
+	} while (numberChoice != secret);
+
 	cout << "Number of guesses was " << count << endl;
 	system("pause");
 	return 0;
 }
+
+
